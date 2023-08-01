@@ -1,0 +1,49 @@
+.custom-toolbar {
+  justify-content: space-between;
+  min-height: 64px;
+  height: inherit;
+}
+
+.container-links {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+}
+
+.links:hover {
+  color: rgb(217, 204, 204);
+}
+
+.linkRegister {
+  background-color: #e4ae30;
+  padding: 0px 10px 0px 10px;
+  border-radius: 10px;
+  margin-right: 20px;
+  color: black;
+}
+
+.linkRegister:hover {
+  color: rgb(86, 86, 86);
+}
+
+.icon_cart {
+  color: white;
+}
+
+.container-cart {
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-logo {
+  padding-top: 10px;
+}
