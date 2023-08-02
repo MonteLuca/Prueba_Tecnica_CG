@@ -11,7 +11,7 @@ export class RegisterFormComponent {
 
   public registerForm : FormGroup;
 
-  constructor(private formBuilder: FormBuilder){
+  constructor (private formBuilder: FormBuilder) {
 
     this.registerForm = this.formBuilder.group({
       name: new FormControl('', [Validators.required, Validators.minLength(2)]),
@@ -22,10 +22,6 @@ export class RegisterFormComponent {
     })
 
   };
-
-  public getErrorMessage() : string {
-    return this.registerForm.invalid ? "Correo Invalido" : ''
-  }
 
   submit() {
     if( this.registerForm.valid ) {
