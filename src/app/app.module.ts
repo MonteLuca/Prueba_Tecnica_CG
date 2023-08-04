@@ -5,11 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProductsComponent } from './components/products/products.component';
-import { RegisterFormComponent } from './components/register-form/register-form.component';
 
 //Imports Angular-Material
 import { SharedModule } from './shared/shared.module';
@@ -18,16 +16,14 @@ import { SharedModule } from './shared/shared.module';
   declarations: [
     AppComponent,
     NavbarComponent,
-    ProductsComponent,
-    RegisterFormComponent
+    ProductsComponent
   ],
   imports: [
     SharedModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule,
-    ReactiveFormsModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
