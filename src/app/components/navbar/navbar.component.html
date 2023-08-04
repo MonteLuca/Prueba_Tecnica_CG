@@ -1,17 +1,16 @@
 <mat-toolbar class="custom-toolbar">
-  <!-- <span>CompraGamer</span> -->
   <div class="container-logo">
     <img src="https://compragamer.net/assets/img/logo-fix.png" alt="">
   </div>
-  <a routerLink="#"class="links products">
+  <a routerLink="/"class="links products">
     Productos
   </a>
   <div class="container-links">
-    <a routerLink="/"class="links container-cart">
+    <a routerLink="#"class="links container-cart">
+      <span class="cart-count">{{ cartItemCount }}</span>
       <span>Carrito</span>
       <mat-icon class="icon_cart">shopping_cart</mat-icon>
     </a>
-    <!-- <a routerLink="/" class="links linkRegister" >Registrarse</a> -->
     <a routerLink="/register" class="links linkRegister" >Registrarse</a>
   </div>
 </mat-toolbar>
