@@ -6,7 +6,7 @@
 }
 
 .container-links {
-  width: 250px;
+  width: 270px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -47,4 +47,21 @@
 
 .container-logo {
   padding-top: 10px;
+}
+
+.products {
+  position: absolute;
+  top: 26px;
+  right: 584px;
+}
+
+.cart-count {
+  position: absolute;
+  top: 12px;
+  right: 174px;
+  background-color: rgb(255, 123, 0);
+  color: white;
+  border-radius: 50%;
+  padding: 0px 12px;
+  font-size: 12px;
 }

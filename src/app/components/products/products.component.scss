@@ -1,0 +1,47 @@
+.example-card {
+  width: 309px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.image {
+  margin: 10px;
+  width: 200px;
+  min-width: 100px;
+}
+
+.container-button {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nombre {
+  font-size: 15px;
+}
+
+.price {
+  color: rgba(255, 136, 0, 0.945);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 7px;
+  text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black;
+}
+
+.container-image {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-nombre {
+  height: 130px
+}

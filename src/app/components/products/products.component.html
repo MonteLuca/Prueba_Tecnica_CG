@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="container-wrapper">
+    <mat-card class="example-card" *ngFor="let product of products">
+      <div class="container-image">
+        <img class="image" mat-card-image [src]="'https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_'+ product.imagenes[0].nombre +'-med.jpg'" alt="{{ product.nombre }}">
+      </div>
+      <mat-card-header class="container-nombre">
+        <mat-card-title class="nombre">{{ product.nombre }}</mat-card-title>
+        <mat-card-subtitle>{{ product.nombre_categoria }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-actions class="container-button">
+          <span class="price">{{ product.precio | currency: 'ARG '}}</span>
+          <button mat-raised-button color="warn" (click)="addToCart()">Agregar al carrito</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
